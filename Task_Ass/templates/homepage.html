@@ -1,0 +1,70 @@
+<!-- download the theme css and js from the static folder -->
+
+{%load static %}
+
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>homepage</title>
+    <link rel="stylesheet" href="{%static 'css/bootstrap.min.css'%}">
+    
+</head>
+
+<body>
+    <h1>Users Database</h1>
+    <a href="{% url 'create_user' %}" class="btn btn-primary mb-3">Add New User</a>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Username</th>
+                <th>Phone_number</th>
+                <th>Email</th>
+                <th>Gender</th>
+                <th>Birthday</th>
+                <th>Actions</th>  <!-- Add this new column header -->
+            </tr>
+        </thead>
+        <tbody>
+<!--use jinja way to add loop inside the html file -->
+
+            {%for c in users%}
+            <tr> 
+                <td>{{c.username}}</td>
+                <td>{{c.Phone_num}}</td>
+                <td> {{c.email}}</td>
+                <td> {{c.Gender}}</td>
+                <td>{{c.birthday}}</td>
+                <td>
+                    <form action="{% url 'delete_user' c.id %}" method="post" style="display:inline;">
+                        {% csrf_token %}
+                        <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                    </form>
+                </td>
+            </tr>
+            {%endfor%}
+
+
+            
+
+        
+        
+       
+        </tbody>
+
+
+
+
+
+
+
+
+
+
+    </table>
+
+
+
+<script src="{%static 'js/bootstrap.bundle.min.js'%}"></script>
+</body>
+</html>
