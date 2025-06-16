@@ -7,15 +7,15 @@
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
 </head>
 <body>
-    <div class="container mt-3">
         <h2>Add New User</h2>
         <form method="post">
+            <!-- security to provide the access from the hackers -->
             {% csrf_token %}
+             <!--show the data of the form as table or parameter -->
             {{ form.as_p }}
             <button type="submit" class="btn btn-primary">Save</button>
             <a href="{% url 'homepage' %}" class="btn btn-secondary">Cancel</a>
         </form>
-    </div>
     <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
 </body>
 </html>

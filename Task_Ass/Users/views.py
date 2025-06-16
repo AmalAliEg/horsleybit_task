@@ -1,6 +1,5 @@
 from django.shortcuts import get_object_or_404, render,redirect
 
-from django.http import HttpResponse
 from .forms import add_users
 from .models import Users_db
 
@@ -18,6 +17,7 @@ def home(request):
 
 #create the function to add the user details in the database 
 def create_user(request):
+    #method to send data 
     if request.method == 'POST':
         form = add_users(request.POST)
         if form.is_valid():
@@ -34,4 +34,6 @@ def delete_user(request, user_id):
     if request.method == 'POST':
         user.delete()
         return redirect('homepage')
+    
+    # GET request shows confirmation page
     return render(request, 'confirm_delete.html', {'user': user})
