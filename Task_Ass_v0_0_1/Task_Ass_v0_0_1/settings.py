@@ -25,6 +25,7 @@ SECRET_KEY = 'django-insecure-)oer@b6p*_^m$e-i=vuckobc=arx_+x^@sxh@03j)x6fr4@zu2
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+#in development phase it still empty but production it would be something like www.ghj.com
 ALLOWED_HOSTS = []
 
 
@@ -73,8 +74,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+
     'corsheaders.middleware.CorsMiddleware',
-    'django.middleware.common.CommonMiddleware'
 ]
 
 ROOT_URLCONF = 'Task_Ass_v0_0_1.urls'
@@ -150,21 +151,17 @@ STATIC_URL = 'static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
-
+#Default field type for auto-generated primary keys
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 #CORS
-# Allow all origins during development
+# Allow requests from all origins during development
 
 CORS_ALLOW_ALL_ORIGINS = True
 
 
-# Or specify specific origins
-
+# Or specify specific origins for production
 # CORS_ALLOWED_ORIGINS = [
-
 #     "http://localhost:3000",
-
 #     "http://127.0.0.1:3000",
-
 # ]
