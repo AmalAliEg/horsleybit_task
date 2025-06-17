@@ -33,7 +33,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV /home/molly/Desktop/horseylit_task/.venv_horsleybit
+set -gx VIRTUAL_ENV /home/molly/Desktop/horsleybit_task/.venv_horsleybit
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/"bin $PATH

@@ -1,4 +1,4 @@
-#!/home/molly/Desktop/horseylit_task/.venv_horsleybit/bin/python3
+#!/home/molly/Desktop/horsleybit_task/.venv_horsleybit/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
