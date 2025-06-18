@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'Users',
     'rest_framework',
-    'corsheaders'
+    'corsheaders',
+    'drf_yasg'
 ]
 
 #ad rest frame work config.
