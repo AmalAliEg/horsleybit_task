@@ -1,13 +1,13 @@
 ## Overview
 
-This repository contains two backend projects demonstrating different approaches to interacting with a PostgreSQL database:
+This repository contains two versions for backend project demonstrating different approaches to interacting with a PostgreSQL database:
 
 1. **MVT (Model-View-Template) Project**: Traditional Django web application
 2. **API Project**: Pure REST API implementation using Django REST Framework
 
 Both projects provide the same core functionality for adding and deleting data from a PostgreSQL database.
 
-## Project 1: MVT Implementation
+## version 1(Task_Ass): MVT Implementation
 
 ### Description
 A traditional Django web application using the Model-View-Template pattern to:
@@ -36,7 +36,7 @@ python manage.py runserver
 
 ```
 
-## Project 2: Pure API Implementation
+## version 2(Task_Ass_v0_0_1): Pure API Implementation
 
 ### Description
 Implements the same functionality as the MVT project but as a pure REST API using Django REST Framework:
