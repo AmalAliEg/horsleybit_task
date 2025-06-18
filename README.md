@@ -34,6 +34,7 @@ python manage.py migrate
 # Start development server
 python manage.py runserver
 
+```
 
 ## Project 2: Pure API Implementation
 
@@ -60,3 +61,4 @@ python manage.py migrate
 
 # Start development server
 python manage.py runserver
+```
