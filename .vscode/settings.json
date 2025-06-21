@@ -1,0 +1,6 @@
+{
+    "python.analysis.extraPaths": [
+        "./Task_Ass_v0_0_2/Task_Ass_v0_0_2",
+        "./Task_Ass_v0_0_1/Users"
+    ]
+}
